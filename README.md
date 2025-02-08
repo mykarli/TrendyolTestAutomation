@@ -1,3 +1,1 @@
 # TrendyolTestAutomation
-# TrendyolTestAutomation
-# TrendyolTestAutomation
