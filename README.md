@@ -1,43 +1,40 @@
-# Trendyol Test Automation
+# 🧪 TrendyolTestAutomation
 
-Bu proje, Trendyol web sitesi için otomatik test senaryolarını geliştirmek amacıyla oluşturulmuştur. Test senaryoları, kullanıcı davranışlarını simüle ederek web sitesi performansını, işlevselliğini ve kullanıcı deneyimini doğrulamayı hedefler.🚀 
-  ## 🎓 Eğitim ve Workshop Katılımı
+Bu proje, Trendyol e-ticaret platformunun çeşitli kullanıcı senaryolarını test etmek amacıyla geliştirilmiş bir otomasyon test projesidir. Java dili kullanılarak Selenium WebDriver ve TestNG teknolojileriyle yazılmıştır.
 
-- **techcareer.net E2E Selenium Test Automation Workshop**  
-  - **Eğitmen:** Can Şeker  
-  - **Tarih:** 7 Şubat 2025  
-  - **Detaylar:**  
-    - Zoom üzerinden gerçekleşen eğitim, E2E test otomasyonu üzerine yoğunlaşmıştır.  
-    - Selenium kullanılarak uçtan uca test senaryoları geliştirme üzerine odaklanılmıştır.  
-    - Eğitimi tamamlayan katılımcılar başarı sertifikası almaya hak kazanmıştır.
+## 🎯 Amaç
 
-      
-### 📋 Özellikler
-Test Senaryoları:
-- Üye olma ve giriş yapma.
-- Ürün arama ve filtreleme.
+- Trendyol web sitesinde kullanıcı davranışlarını test etmek
+- Arama, filtreleme, sepete ekleme gibi temel akışları otomatikleştirmek
+- UI test süreçlerini kontrol etmek
 
-### 🚀 Teknolojiler 
-- 🖥️ Java
-- 🌐 Selenium
-- 🧪 TestNG
-- 📦 Maven
-- ⚙️ Jenkins
-- 📊 Allure Reports
-Raporlama: Test sonuçlarının otomatik olarak Allure Reports ile görselleştirilmesi.
+## ⚙️ Kullanılan Teknolojiler
 
-### 💻 Nasıl Çalıştırılır?
-Gereksinimler:
-- Java (17 veya 21)
+- Java
+- Selenium WebDriver
+- TestNG
 - Maven
-- Jenkins (CI/CD süreçleri için)
-- Allure Commandline (raporları çalıştırmak için)
+- Page Object Model (POM) tasarım deseni
 
-### 🛠 Kullanılan Araçlar
-- Selenium WebDriver: Web otomasyonu için.
-- TestNG: Test yönetimi ve raporlama.
-- Allure Reports: Test sonuçlarını görselleştirme.
-- Jenkins: Sürekli entegrasyon ve delivery süreçleri için.
+## 🧪 Test Kapsamı
 
+Aşağıdaki test senaryoları uygulanmıştır:
 
+- ✅ Anasayfa açılıyor mu?
+- 🔍 Ürün araması yapılabiliyor mu?
+- 📦 Ürün sepete ekleniyor mu?
+- 🗑️ Sepet temizlenebiliyor mu?
+- 🔁 Filtreleme ve kategori geçişleri çalışıyor mu?
 
+## 📁 Proje Yapısı
+
+```bash
+src
+├── main
+│   └── java
+│       └── pages       → Sayfa sınıfları (Page Object)
+├── test
+│   └── java
+│       └── tests       → Test senaryoları
+└── resources
+    └── drivers         → ChromeDriver, config dosyaları
