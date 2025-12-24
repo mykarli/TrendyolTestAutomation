@@ -1,40 +1,87 @@
-# 🧪 TrendyolTestAutomation
+# Trendyol Test Automation
 
-Bu proje, Trendyol e-ticaret platformunun çeşitli kullanıcı senaryolarını test etmek amacıyla geliştirilmiş bir otomasyon test projesidir. Java dili kullanılarak Selenium WebDriver ve TestNG teknolojileriyle yazılmıştır.
+## 🧠 Overview
+Bu proje, bir e-ticaret platformunda kullanıcıların en kritik akışlarının
+(regresyon riski yüksek olan senaryoların) otomasyon testleri ile güvence altına alınması amacıyla geliştirilmiştir.
 
-## 🎯 Amaç
+Amaç, sadece test yazmak değil; **ürün davranışını koruyan bir kalite kalkanı** oluşturmaktır.
 
-- Trendyol web sitesinde kullanıcı davranışlarını test etmek
-- Arama, filtreleme, sepete ekleme gibi temel akışları otomatikleştirmek
-- UI test süreçlerini kontrol etmek
+---
 
-## ⚙️ Kullanılan Teknolojiler
+## 🎯 Problem Statement
+E-ticaret uygulamalarında:
+- Sık deploy yapılır
+- Küçük değişiklikler bile kritik akışları bozabilir
+- Manuel test süreçleri zaman alır ve hata payı yüksektir
 
-- Java
-- Selenium WebDriver
-- TestNG
-- Maven
-- Page Object Model (POM) tasarım deseni
+Özellikle:
+- Ürün arama
+- Sepete ekleme
+- Sayfa geçişleri
 
-## 🧪 Test Kapsamı
+gibi akışlar sürekli risk altındadır.
 
-Aşağıdaki test senaryoları uygulanmıştır:
+---
 
-- ✅ Anasayfa açılıyor mu?
-- 🔍 Ürün araması yapılabiliyor mu?
-- 📦 Ürün sepete ekleniyor mu?
-- 🗑️ Sepet temizlenebiliyor mu?
-- 🔁 Filtreleme ve kategori geçişleri çalışıyor mu?
+## 💡 Solution Approach
+Bu projede:
 
-## 📁 Proje Yapısı
+- Kullanıcının gerçek davranışları baz alındı
+- Kritik kullanıcı senaryoları belirlendi
+- Bu senaryolar otomasyon testleri ile kapsandı
 
-```bash
-src
-├── main
-│   └── java
-│       └── pages       → Sayfa sınıfları (Page Object)
-├── test
-│   └── java
-│       └── tests       → Test senaryoları
-└── resources
-    └── drivers         → ChromeDriver, config dosyaları
+Testler, **“kod çalışıyor mu?”** değil  
+**“ürün doğru çalışıyor mu?”** sorusuna cevap verecek şekilde tasarlandı.
+
+---
+
+## 🔁 Tested User Flows
+- Ana sayfa erişimi
+- Ürün arama ve listeleme
+- Ürün detay sayfası kontrolleri
+- Sepete ekleme akışı
+- Sayfa geçişleri ve temel UI doğrulamaları
+
+Bu akışlar, regresyon riskini minimize etmek için seçildi.
+
+---
+
+## 🛠️ Tech Stack
+- Language: Java
+- Test Framework: (Selenium / TestNG / JUnit – kullandığını belirt)
+- Build Tool: Maven / Gradle
+- Browser Automation: Selenium WebDriver
+
+---
+
+## ⚖️ Key Decisions & Trade-offs
+- **UI testleri tercih edildi**  
+  → Kullanıcıya en yakın katmanda doğrulama yapmak için
+
+- **Her senaryo test edilmedi**  
+  → En kritik ve en sık bozulan akışlara odaklanıldı
+
+Amaç, %100 kapsama değil; **maksimum iş değeri** üretmekti.
+
+---
+
+## 🚀 Possible Improvements
+Proje genişletilmek istenirse:
+
+- CI/CD pipeline entegrasyonu
+- Paralel test koşumu
+- Cross-browser test desteği
+- Raporlama ve loglama iyileştirmeleri
+
+---
+
+## 📌 Why This Project Matters
+Bu proje:
+- Test otomasyonunun iş değerini anlamayı
+- Ürün stabilitesine katkı sağlamayı
+- Geliştirme sürecinde kalite bilinci oluşturmayı
+
+hedefler.
+
+Bu yaklaşım, yazılım geliştirmeyi sadece kod yazmak olarak değil;
+**ürün sorumluluğu** olarak ele aldığımı gösterir.
